@@ -1,24 +1,25 @@
 body{
-    background-image: url(./assets/pexels-jack-hawley-21323.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: 1950px 1000px;
+    background-image: url(./assets/subtle_carbon.png);
+    background-repeat:repeat;
+    /* background-size: 1950px 1000px; */
     /* margin-top: 900px; */
 }
 
-header{
-    text-align: right;
-    font-size: 25px;
-    margin: auto;
+header {
+    text-align: center;
     letter-spacing: 3px;
     word-spacing: 15px;
+    font-size: 25px;
+    margin: auto;
+    z-index: -1;
+    
 }
 
-/* header a {
+header a {
     color: aliceblue;
     text-decoration: none;
     font-family: monospace;
-} */
+}
 
 header a {
   position: relative;
@@ -45,132 +46,126 @@ header a:hover {
 
 
   
-  ul {
-    position:relative;
-    width: 100px;
-    height: 50px;
-    top: 580px;
-    left:1480px;
-    transform:translate(-50%, -50%);
-    display:flex;
-    margin:0;
-    padding:0;
-  }
-  
-  ul li {
-    list-style:none;
-    margin:0 5px;
-  }
-  
-  ul li a .fa {
-    font-size: 15px;
-    color: #262626;
-    line-height:30px;
-    transition: .5s;
-    padding-right: 2px;
-  }
-
-#facebook {
-    top: 5px;
+a {
+  color: #fff;
+  text-decoration: none;
 }
-  
-  ul li a span {
-    padding:0;
-    margin:0;
-    position:absolute;
-    top: 5px;
-    color: #262626;
-    transition: .5s;
-  }
-  
-  ul li a {
-    text-decoration: none;
-    display:absolute;
-    display:block;
-    width:90px;
-    height:30px;
-    background: #fff;
-    text-align:left;
-    padding-left: 10px;
-    transform: rotate(-30deg) skew(25deg) translate(0,0);
-    transition:.5s;
-    box-shadow: -20px 20px 10px rgba(0,0,0,.5);
-  }
-  ul li a:before {
-    content: '';
-    position: absolute;
-    top:10px;
-    left:-20px;
-    height:100%;
-    width:15px;
-    background: #b1b1b1;
-    transform: .5s;
-    transform: rotate(0deg) skewY(-45deg);
-  }
-  ul li a:after {
-    content: '';
-    position: absolute;
-    bottom:-20px;
-    left:-10px;
-    height:15px;
-    width:100%;
-    background: #b1b1b1;
-    transform: .5s;
-    transform: rotate(0deg) skewX(-45deg);
-  }
-  
-  ul li a:hover {
-    transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
-    box-shadow: -50px 50px 50px rgba(0,0,0,.5);
-  }
-  
-  ul li:hover .fa {
-    color:#fff;
-  }
-  
-  ul li:hover span {
-    color:#fff;
-  }
-  
-  ul li:hover:nth-child(1) a{
-    background: #3b5998;
-  }
-  ul li:hover:nth-child(1) a:before{
-    background: #365492;
-  }
-  ul li:hover:nth-child(1) a:after{
-    background: #4a69ad;
-  }
-  
-  ul li:hover:nth-child(2) a{
-    background: #00aced;
-  }
-  ul li:hover:nth-child(2) a:before{
-    background: #097aa5;
-  }
-  ul li:hover:nth-child(2) a:after{
-    background: #53b9e0;
-  }
-  
-  ul li:hover:nth-child(3) a{
-    background: #d63722;
-  }
-  ul li:hover:nth-child(3) a:before{
-    background: #a51c0a;
-  }
-  ul li:hover:nth-child(3) a:after{
-    background: #f83e25;
-  }
-  
-  ul li:hover:nth-child(4) a{
-    background: #642305;
-  }
-  ul li:hover:nth-child(4) a:before{
-    background: #6b2a0c;
-  }
-  ul li:hover:nth-child(4) a:after{
-    background: #83320d;
-  }
+.me {
+  width: 400px;
+  margin: 90px auto;
+}
+.me p,
+.me h1 {
+  letter-spacing: 3px;
+  text-align: center;
+}
+.me p {
+  font-weight: 200;
+}
+.me span {
+  font-weight: bold;
+}
+.social {
+  position: fixed;
+  top: 500px;
+}
+.social ul {
+  padding: 0px;
+  -webkit-transform: translate(-270px, 0);
+  -moz-transform: translate(-270px, 0);
+  -ms-transform: translate(-270px, 0);
+  -o-transform: translate(-270px, 0);
+  transform: translate(-270px, 0);
+}
+.social ul li {
+  display: block;
+  margin: 5px;
+  background: rgb(189, 185, 185);
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+  -webkit-border-radius: 0 30px 30px 0;
+  -moz-border-radius: 0 30px 30px 0;
+  border-radius: 0 30px 30px 0;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li:hover {
+  -webkit-transform: translate(110px, 0);
+  -moz-transform: translate(110px, 0);
+  -ms-transform: translate(110px, 0);
+  -o-transform: translate(110px, 0);
+  transform: translate(110px, 0);
+  background: rgba(255, 255, 255, 0.4);
+}
+.social ul li:hover a {
+  color: #000;
+}
+.social ul li:hover i {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.36);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.social ul li i {
+  margin-left: 10px;
+  color: #000;
+  /* background: white; */
+  padding: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  /* background: #ffffff; */
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.fa-twitter {
+  background: rgb(31, 156, 228) !important;
+}
+
+.fa-github {
+  background: rgb(121, 111, 111);
+}
+
+.fa-youtube {
+  background: rgb(172, 11, 11);
+}
+
+.fa-instagram {
+  background: rgb(77, 24, 8);
+}
+
+.fa-facebook {
+  background: rgb(33, 96, 190);
+}
+
+.fa-linkedin {
+  background: rgb(31, 162, 238);
+}
+
+/* body {
+  background: #4F8B89;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+} */
 
   .card {
       border-radius: 10px;
@@ -191,4 +186,11 @@ header a:hover {
       border-radius: 10px;
       margin-top: 5px;
       margin-left: 0px;
+  }
+
+  #myDiv {
+    color: white;
+    text-align: right;
+    font-size: 15px;
+    margin-top: -30px;
   }

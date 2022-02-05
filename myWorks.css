@@ -1,8 +1,6 @@
 body{
-    background-image: url(./assets/pexels-jack-hawley-21323.jpg);
-    
-    background-repeat: no-repeat;
-    background-size: 1950px 1000px;
+    background-image: url(./assets/subtle_carbon.png);
+    background-repeat: repeat;
     /* margin-top: 900px; */
 }
 
